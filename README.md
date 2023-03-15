@@ -1,6 +1,13 @@
 # port-folioGBD-marzo
-
-## **Resumen**
+## Tabla de contenidos
+- [Resumen](#resumen)
+     - [Tema 6](#tema-6)
+     - [Tema 7](#tema-7)
+- [Reflexiones personales](#reflexiones-personales)
+- [Ejercicios significativos](#ejercicios-significativos)
+     - [Ejercicios de invenión propia](#ejercicios-de-invención-propia)
+- [Conclusiones](#conclusiones)
+## Resumen
 En este apartado vamos a resumir lo que se ha explicado a lo largo de este trimestre en la asignatura de Gestión de bases de datos, para ello vamos a dividir la información en 2 temas.
 ### *Tema 6*
 En este tema hemos tocado los siguientes apartados:
@@ -12,10 +19,10 @@ En este tema hemos tocado los siguientes apartados:
 - Por último, hemos aprendido a utilizar expresiones regulares, unas funciones capaces de facilitar mucho el trabajo a la hora de realizar ciertas consultas, utilizando codigos de exrpesiones regulares para cambiar textos de maneras más comodas.
 
 ### *Tema 7*
-## **Reflexiones personales**
+## Reflexiones personales
 
-## **Ejercicios significativos**
+## Ejercicios significativos
 
 ### *Ejercicios de invención propia*
 
-## **Conclusiones**
+## Conclusiones

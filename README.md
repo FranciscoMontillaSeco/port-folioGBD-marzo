@@ -48,6 +48,11 @@ En la segunda parte del tema hemos estudiado las consultas de totales.
 - Cláusula HAVING funciona como sustituto a WHERE para las funciones totales.
 ## Reflexiones personales
 
+En general me han parecido los temas más interesantes que se han explicado hasta la fecha, a parte de seguir un orden lógico, lo cuál me ayuda mucho más a entender como funciona el lenguaje SQL.
+Bajo mi punto de vista, las bases de datos ganan mucha utilidad cuando se le aplican consultas, por lo cuál me parece un tema fundamental, el primero para aprender como manejar los datos de manera más especifica, y el segundo abriendote las puertas a relacionar estos datos sobre los que ya hemos realizado un trabajo, por lo cual me han aportado mucho conocimiento sobre bases de datos y a la hora de entender como funciona nuestra información en internet, como realizar busquedas especificas sobre temas complejos, etc.
+
+De estos temas podemos destacar de manera positiva las expresiones regulares del primer tema, puesto que son herramientas muy potentes para realizar consultas (aunque estén limitadas a oracle enterprise), y las funciones totales del segundo, puesto que permiten realizar operaciones de una manera que no conocia y me ha resultado muy interesante.
+Por destacar algo negativo diria que los calculos con fechas del primer tema me resultaron algo complicados y denso, aunque tengan su parte útil y buena, y del segundo tema no entiendo muy bien la necesidad de la cláusula HAVING.
 ## Ejercicios significativos
 
 ### *Ejercicios de invención propia*

@@ -58,6 +58,7 @@ Por destacar algo negativo diria que los calculos con fechas del primer tema me 
 Ahora vamos a resaltar ciertos ejercicios de las prácticas que se han realizado durante el transcurso de las clases.
 
 1.- Ejercicio con JOIN ON o JOIN USING
+
 Hemos utilizado el ejercicio 3 de la práctica 18.
 >En geografia muesta el nombre de cada localidad, la provincia en la que está y su comunidad.  
 ```
@@ -68,6 +69,7 @@ JOIN COMUNIDADES c using(ID_COMUNIDAD);
 ```
 
 2.- Consulta que utilice un CROSS JOIN
+
 Hemos utilizado el ejercicio 15 de la práctica 17
 >En almacen vamos a mostrar el nombre de las empresas que están en la misma provincia.
 ```
@@ -77,6 +79,7 @@ CROSS JOIN EMPRESAS b
 WHERE a.cif>b.cif and a.PROVINCIA=b.PROVINCIA;
 ```
 3.- Consulta con LEFT OUTER JOIN
+
 En este caso el ejercicio 3 de la práctica 19
 >En el esquema padremadre muestra el nombre de las personas, el de su padre y el de su madre y muestra las personas sin padre ni madre.
 ```

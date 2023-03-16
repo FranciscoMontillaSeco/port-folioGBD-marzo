@@ -55,6 +55,16 @@ De estos temas podemos destacar de manera positiva las expresiones regulares del
 Por destacar algo negativo diria que los calculos con fechas del primer tema me resultaron algo complicados y denso, aunque tengan su parte útil y buena, y del segundo tema no entiendo muy bien la necesidad de la cláusula HAVING.
 ## Ejercicios significativos
 
+Ahora vamos a resaltar ciertos ejercicios de las prácticas que se han realizado durante el transcurso de las clases.
+
+1.- Ejercicio con JOIN ON o JOIN USING
+```
+select a.nombre as localidad,b.nombre as provincia,c.nombre AS comunidad
+from LOCALIDADES a
+JOIN PROVINCIAS b using(n_provincia)
+JOIN COMUNIDADES c using(ID_COMUNIDAD);
+```
+
 ### *Ejercicios de invención propia*
 
 ## Conclusiones

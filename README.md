@@ -59,7 +59,7 @@ Ahora vamos a resaltar ciertos ejercicios de las prácticas que se han realizado
 
 1.- Ejercicio con JOIN ON o JOIN USING
 Hemos utilizado el ejercicio 3 de la práctica 18.
->En la tabla de geografia muesta el nombre de cada localidad, la provincia en la que está y su comunidad.  
+>En geografia muesta el nombre de cada localidad, la provincia en la que está y su comunidad.  
 ```
 select a.nombre as localidad,b.nombre as provincia,c.nombre AS comunidad
 from LOCALIDADES a
@@ -67,7 +67,25 @@ JOIN PROVINCIAS b using(n_provincia)
 JOIN COMUNIDADES c using(ID_COMUNIDAD);
 ```
 
-2.-
+2.- Consulta que utilice un CROSS JOIN
+Hemos utilizado el ejercicio 15 de la práctica 17
+>En almacen vamos a mostrar el nombre de las empresas que están en la misma provincia.
+```
+SELECT a.nombre,b.nombre,a.PROVINCIA
+FROM EMPRESAS a
+CROSS JOIN EMPRESAS b
+WHERE a.cif>b.cif and a.PROVINCIA=b.PROVINCIA;
+```
+3.- Consulta con LEFT OUTER JOIN
+En este caso el ejercicio 3 de la práctica 19
+>En el esquema padremadre muestra el nombre de las personas, el de su padre y el de su madre y muestra las personas sin padre ni madre.
+```
+select a.NOMBRE as NOMBRE,b.NOMBRE as PADRE,c.NOMBRE as MADRE
+from personas a
+left outer join personas b on(b.N_PERSONA=a.N_PADRE)
+left outer join personas c on (c.N_PERSONA=a.N_MADRE);
+```
+
 
 ### *Ejercicios de invención propia*
 

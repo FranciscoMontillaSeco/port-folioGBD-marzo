@@ -33,11 +33,19 @@ En este tema hemos realizado un estudio sobre las consultas sobre varias tablas.
           - Consultas de no coincidentes: Muestra datos de una tabla exclusivamente si no se relacionan con otra.
 - Productos cruzados
      - CROSS JOIN muestra todas las combinaciones de las filas de una tabla con todas las de la segunda.
+
 En la segunda parte del tema hemos estudiado las consultas de totales.
-- Las consultas de totales
-- Funciones de totales
-- Agrupar los resultados
-- Cláusula HAVING
+- Las consultas de totales estas nos permiten realizar cálculos con datos de diferentes filas de manera vertical.
+- Funciones de totales 
+     - COUNT Cuenta los valores que no tengan valor nulo de una fila.
+     - SUM Suma los valores de una fila.
+     - AVG Medida aritmética de una fila.
+     - MAX Busca el máximo de la fila.
+     - MIN Busca el mínimo de la fila.
+     - STDDEV
+     - VARIANCE
+- Agrupar los resultados con la cláusula GROUP BY, la cuál sirve para realizar calculos por agrupaciones. 
+- Cláusula HAVING funciona como sustituto a WHERE para las funciones totales.
 ## Reflexiones personales
 
 ## Ejercicios significativos

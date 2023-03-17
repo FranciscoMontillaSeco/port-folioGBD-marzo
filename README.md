@@ -147,3 +147,15 @@ GROUP BY TIPO;
 ```
 
 ## Conclusiones
+
+Como conclusión general se puede decir que ahora ya tenemos una nocion básica de como realizar una base de datos y sacarle una utilidad.
+
+Ahora, durante estos temas, a parte de el problema personal, quizá he tenido problemas entendiendo el uso del cross join, a parte de que las fechas me parecen complicadas, por ese apartado yo creo que el resto ha sido todo bastante claro y facil de entender.
+
+Ahora vamos a repasar lo que más me ha gustado de estos dos temas, y lo que menos.
+
+Lo que más me ha gustado:
+- En mi caso, a parte de todo el trabajo práctico en la base de datos, me han gustado mucho las funciones con textos y nulos, ya que le veo muchisimo potencial a la hora de ordenar y concretar información, y la transformación de datos.
+
+Lo que menos me ha gustado:
+- Para mí, los dos apartados más negativos del tema serían las funciones matemáticas, y quizá el uso del having, puesto que me ha resultado un poco engorroso.

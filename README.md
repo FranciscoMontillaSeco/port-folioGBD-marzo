@@ -57,12 +57,16 @@ Por destacar algo negativo diria que los calculos con fechas del primer tema me 
 
 Ahora vamos a resaltar ciertos ejercicios de las prácticas que se han realizado durante el transcurso de las clases.
 
+Para ver el documento SQL haz clic [aquí](./Ejercicios-Port-folioGBD.sql)
+
 1.- Ejercicio con JOIN ON o JOIN USING
 
 Hemos utilizado el ejercicio 3 de la práctica 18.
 >En geografia muesta el nombre de cada localidad, la provincia en la que está y su comunidad.  
 ```
-select a.nombre as localidad,b.nombre as provincia,c.nombre AS comunidad
+select a.nombre as localidad,
+       b.nombre as provincia,
+       c.nombre AS comunidad
 from LOCALIDADES a
 JOIN PROVINCIAS b using(n_provincia)
 JOIN COMUNIDADES c using(ID_COMUNIDAD);
@@ -83,13 +87,63 @@ WHERE a.cif>b.cif and a.PROVINCIA=b.PROVINCIA;
 En este caso el ejercicio 3 de la práctica 19
 >En el esquema padremadre muestra el nombre de las personas, el de su padre y el de su madre y muestra las personas sin padre ni madre.
 ```
-select a.NOMBRE as NOMBRE,b.NOMBRE as PADRE,c.NOMBRE as MADRE
+select a.NOMBRE as NOMBRE,
+       b.NOMBRE as PADRE,
+       c.NOMBRE as MADRE
 from personas a
 left outer join personas b on(b.N_PERSONA=a.N_PADRE)
 left outer join personas c on (c.N_PERSONA=a.N_MADRE);
+
+```
+4.- Consulta con SUM, AVG, COUNT, MAX o MIN
+
+El ejercicios es el 4 de la práctica 19
+>En el esquema padremadre, obtén el número de hijos de cada pareja y ordenalos de más a menos hijos, después por nombre del padre y luego por el de la madre.
+```
+SELECT b.nombre as "Padre",
+       c.nombre as "Madre",
+       COUNT(*) as "Número de hijos"
+FROM PERSONAS a
+JOIN PERSONAS b on (a.N_PADRE=b.N_PERSONA)
+JOIN PERSONAS c on (a.N_MADRE=c.N_PERSONA)
+GROUP BY b.nombre, c.nombre
+ORDER BY 3 DESC,1,2 ;
 ```
 
+5.- Consulta con HAVING
+
+El ejercicio 5 de la práctica 21 muestra muy bien el uso de esta función
+>En el esquema nba, muestra los equipos y ciudades que aparezcan varias veces en la tabla equipos.
+```
+SELECT NOMBRE,CIUDAD
+FROM EQUIPOS
+GROUP BY CIUDAD, NOMBRE
+HAVING COUNT(*)>1;
+```
 
 ### *Ejercicios de invención propia*
+
+En este apartado vamos a intentar utilizar todo lo que hemos aprendido para crear y resolver dos ejercicios como los que se han planteado en el apartado anterior.
+
+Por comodidad, vamos a realizar los dos ejercicios en el esquema de almacen
+
+Ejercicio 1:
+> Crea una consulta a partir de las tablas Tipos_pieza y existencias en la que muestres el tipo de pieza, su cantidad, el número de almacen de cada una y su descripción.
+```
+SELECT a.TIPO,
+       b.CANTIDAD,
+       b.N_ALMACEN,
+       a.DESCRIPCION
+FROM TIPOS_PIEZA a
+JOIN EXISTENCIAS b ON (a.TIPO=b.TIPO);
+```
+
+Ejercicio 2:
+>En la tabla lineas_pedidos, calcla la media de costo por pieza.
+```
+SELECT TIPO,AVG(PRECIO)
+FROM LINEAS_PEDIDO
+GROUP BY TIPO;
+```
 
 ## Conclusiones

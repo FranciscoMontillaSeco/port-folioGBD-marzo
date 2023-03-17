@@ -8,11 +8,11 @@
      - [Ejercicios de invenión propia](#ejercicios-de-invención-propia)
 - [Conclusiones](#conclusiones)
 ## Resumen
-En este apartado vamos a resumir lo que se ha explicado a lo largo de este trimestre en la asignatura de Gestión de bases de datos, para ello vamos a dividir la información en 2 temas.
+En este apartado vamos a resumir lo que se ha explicado a lo largo de este trimestre en la asignatura de Gestión de bases de datos, para ello, vamos a dividir la información en 2 temas.
 ### *Tema 6*
 En este tema hemos tocado los siguientes apartados:
 - La cláusula Select en SQL, la cual es la única instrucción del lenguaje DQL y permite realizar consultas sobre las tablas (cálculos, agrupaciones ...).
-- También hemos empezado a profundizar sobre esta con las funciones y operaciones numericas, utilizando funciones como sysdate y realizando operaciones sobre números.
+- También hemos empezado a profundizar sobre esta con las funciones y operaciones numéricas, utilizando funciones como sysdate y realizando operaciones sobre datos numéricos.
 - En el siguiente apartado aprendimos a utilizar instrucciones sobre textos y nulos, cortando textos, cambiando nulos por textos, etc.
 - Despues pasamos a realizar calculos con fechas.
 - A continuación, aprendimos a realizar conversiones de datos, haciendolos pasar de numeros a textos, de textos a fechas, etc.
@@ -21,7 +21,7 @@ En este tema hemos tocado los siguientes apartados:
 ### *Tema 7*
 En este tema hemos realizado un estudio sobre las consultas sobre varias tablas.
 - Hemos empezado con el producto cruzado, que es una operación para combinar cada fila de una tabla con cada fila de la otra. Esto no refleja la realidad de cómo se combinan los datos.
-- La cláusula JOIN permitio especificar más facilmente las relaciones entre tablas dentro de una consulta.
+- La cláusula JOIN permite especificar más facilmente las relaciones entre tablas dentro de una consulta.
      - JOIN USING  permite relacionar en una o varias columnas, estas columnas solos se pueden usar si el nombre de estas son iguales en ambas tablas.
      - JOIN ON Indica la relacion entre tablas de manera más completa, pero necesita cualificar las columnas para que no haya ambigüedad (igualando una columna con la otra).
      - NATURAL JOIN Es un JOIN USING en el que se sobreentiende que se asocian todas las columnas que tienen el mismo nombre (no se usa por su inespecificidad).
@@ -35,8 +35,8 @@ En este tema hemos realizado un estudio sobre las consultas sobre varias tablas.
      - CROSS JOIN muestra todas las combinaciones de las filas de una tabla con todas las de la segunda.
 
 En la segunda parte del tema hemos estudiado las consultas de totales.
-- Las consultas de totales estas nos permiten realizar cálculos con datos de diferentes filas de manera vertical.
-- Funciones de totales 
+- Las consultas de totales nos permiten realizar cálculos con datos de diferentes filas de manera vertical.
+- Funciones de totales:
      - COUNT Cuenta los valores que no tengan valor nulo de una fila.
      - SUM Suma los valores de una fila.
      - AVG Medida aritmética de una fila.
@@ -139,7 +139,7 @@ JOIN EXISTENCIAS b ON (a.TIPO=b.TIPO);
 ```
 
 Ejercicio 2:
->En la tabla lineas_pedidos, calcla la media de costo por pieza.
+>En la tabla lineas_pedidos, calcula la media de costo por pieza.
 ```
 SELECT TIPO,AVG(PRECIO)
 FROM LINEAS_PEDIDO
@@ -148,9 +148,9 @@ GROUP BY TIPO;
 
 ## Conclusiones
 
-Como conclusión general se puede decir que ahora ya tenemos una nocion básica de como realizar una base de datos y sacarle una utilidad.
+Como conclusión general se puede decir que ahora ya tenemos una noción básica de como realizar una base de datos y sacarle una utilidad.
 
-Ahora, durante estos temas, a parte de el problema personal, quizá he tenido problemas entendiendo el uso del cross join, a parte de que las fechas me parecen complicadas, por ese apartado yo creo que el resto ha sido todo bastante claro y facil de entender.
+Ahora, durante estos temas quizá he tenido problemas entendiendo el uso del cross join, a parte de que las fechas me parecen complicadas, por ese apartado yo creo que el resto ha sido todo bastante claro y facil de entender.
 
 Ahora vamos a repasar lo que más me ha gustado de estos dos temas, y lo que menos.
 
@@ -158,4 +158,4 @@ Lo que más me ha gustado:
 - En mi caso, a parte de todo el trabajo práctico en la base de datos, me han gustado mucho las funciones con textos y nulos, ya que le veo muchisimo potencial a la hora de ordenar y concretar información, y la transformación de datos.
 
 Lo que menos me ha gustado:
-- Para mí, los dos apartados más negativos del tema serían las funciones matemáticas, y quizá el uso del having, puesto que me ha resultado un poco engorroso.
+- Para mí, los dos apartados más negativos del tema serían las funciones matemáticas, y quizá el uso del having, puesto que me ha resultado un poco engorroso.w
